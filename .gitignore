@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.eggs/
+*.log
+.env
+.venv
+venv/
+.envrc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Build
+build/
+dist/
+
+# Data / large artifacts (adjust as needed)
+*.rec
+*.dat
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.bin
+*.mp4
+*.avi
+*.wav
+*.csv
+*.tsv
+*.xlsx
+*.zip
+*.tar
+*.tar.gz
