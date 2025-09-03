@@ -247,7 +247,7 @@ class LFPCollection:
                     else:
                         raise ValueError("Invalid mode. Choose 'all', 'power', 'coherence', or 'granger'.")    
            
-    def save_to_json(collection, output_path, notes=""):
+    def save_to_json(collection, output_path, notes="", filename="lfp_collection"):
         """Save LFP collection metadata to JSON and individual recordings to H5 files.
 
         Parameters
@@ -286,7 +286,7 @@ class LFPCollection:
                         event_dict[key] = value.tolist()
 
         # Create directory for JSON
-        collection_path = os.path.join(output_path, "lfp_collection.json")
+        collection_path = os.path.join(output_path, filename+".json")
         os.makedirs(output_path, exist_ok=True)
 
         # Save metadata to JSON
